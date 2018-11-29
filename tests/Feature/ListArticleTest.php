@@ -22,8 +22,8 @@ class ListArticleTest extends TestCase
             [
             'title' => 'Articolo 1',
             'body' => 'Questo è un articolo',
-            'creationDate' => '2018-11-29 00:00:00'
-            ]
+            'creationDate' => '2018-11-29 00:00:00',
+            ],
         ]);
     }
 }

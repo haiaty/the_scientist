@@ -1,16 +1,17 @@
 <?php
+
+declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: osboxes
  * Date: 29/11/18
- * Time: 9.17
+ * Time: 9.17.
  */
 
 namespace LaravelDay\Article;
 
 final class Article
 {
-
     /**
      * @var string
      */
@@ -30,8 +31,7 @@ final class Article
      */
     private $id;
 
-
-    public function __construct(int $id, string $title, string $body, \DateTime $creationDate)
+    public function __construct(int $id, string $title, string $body, \DateTimeImmutable $creationDate)
     {
         $this->title = $title;
         $this->body = $body;
@@ -42,7 +42,7 @@ final class Article
     /**
      * @return mixed
      */
-    public function getTitle() : string
+    public function getTitle(): string
     {
         return $this->title;
     }
@@ -58,7 +58,7 @@ final class Article
     /**
      * @return \DateTime
      */
-    public function getCreationDate(): \DateTime
+    public function getCreationDate(): \DateTimeImmutable
     {
         return $this->creationDate;
     }
@@ -70,6 +70,4 @@ final class Article
     {
         return $this->id;
     }
-
-
 }
